@@ -1,5 +1,4 @@
 from random import randint
-
 lista = []
 media = 0
 positivos = 0
