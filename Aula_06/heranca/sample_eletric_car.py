@@ -36,10 +36,12 @@ class ElectricCar(Car):
         print("This car has a " + str(self.battery_size) + "-kWh battery.")
 
     def fill_gas_tank(self):
-        print("Carros elétricos não têm tanque de combustível")
+         print("Carros elétricos não têm tanque de combustível")
 
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_descriptive_name())
 my_tesla.describe_battery()
 my_tesla.fill_gas_tank()
+
+my_tesla.describe_battery()

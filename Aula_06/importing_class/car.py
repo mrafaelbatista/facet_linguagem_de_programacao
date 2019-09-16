@@ -1,4 +1,4 @@
-# Esse módulo tenta representar um caror
+# Esse módulo tenta representar um carro
 
 class Car():
 
