@@ -1,0 +1,15 @@
+{% extends "ouvidoria/base.html" %}
+
+{% block content %}
+
+<p>Topicos</p>
+
+<ul>
+    {% for topico in topicos %}
+        <li>{{ topico }}</li>
+    {% empty %}
+        <li>No topics have been added yet.</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
