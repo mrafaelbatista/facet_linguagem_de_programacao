@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "editor.fontSize": 22
+=======
+    "editor.fontSize": 22,
+    "terminal.integrated.fontSize": 18
+>>>>>>> master
 }
