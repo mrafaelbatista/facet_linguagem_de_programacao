@@ -1,0 +1,25 @@
+{% extends "gestoreventos/base.html" %}
+
+{% block content %}
+
+    <div class="card text-center">
+        <div class="card-body">
+
+            {% if form.errors %}
+                <div class="alert alert-danger" role="alert">
+                    Seu nome de usuário e senha não conferem. Por favor, tente novamente.
+                </div>
+            {% endif %}
+
+            <form method="post" action="{% url 'users:login' %}">
+                <div class="form-group">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+                    <button name="submit" class="btn btn-primary">Log in</button>
+                    <input type="hidden" name="next" value="{% url 'gestoreventos:index' %}" />
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

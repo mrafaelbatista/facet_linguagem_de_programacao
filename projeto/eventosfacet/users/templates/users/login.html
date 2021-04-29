@@ -1,0 +1,24 @@
+{% extends "gestoreventos/base.html" %}
+
+{% block content %}
+
+<div class="card">
+  <div class="card-body">
+    
+    {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+        Seu username ou password não conferem. Tente novamente.
+        </div>
+    {% endif %}
+
+    <form method="post" action="{% url 'users:login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit" class="btn btn-primary">Autenticar</button>
+        <input type="hidden" name="next" value="{% url 'gestoreventos:cursos' %}" />
+    </form>
+
+  </div>
+</div>
+
+{% endblock content %}

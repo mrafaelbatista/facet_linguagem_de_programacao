@@ -1,0 +1,14 @@
+{% extends "gestoreventos/base.html" %}
+
+{% block content %}
+
+<h1>Editar o curso</h1>
+
+<form action="{% url 'gestoreventos:novo_curso' curso.id %}" method='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name="submit">Salvar</button>
+</form>
+
+
+{% endblock content %}
