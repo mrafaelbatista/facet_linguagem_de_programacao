@@ -1,4 +1,4 @@
-# Programming Languages Course
+# FACET | Programming Languages Course
 by Messias R. Batista (@mrafaelbatista)
 
 ## About this repository
